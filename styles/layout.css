@@ -1,9 +1,102 @@
 :root {
-  --theme-color-1: darkgray;
+  --theme-color-1: rgb(31, 31, 31);
   --theme-color-2: gray;
   --theme-color-3: white;
   --theme-color-4: black;
 }
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
+  padding: 0;
   background-color: var(--theme-color-1);
+  font-family: 'Abel', sans-serif;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+h1 {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+nav {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 75%;
+  transform: translateX(-50%);
+}
+nav ul li {
+  text-align: center;
+  margin: 25px 0;
+}
+nav ul li a {
+  font-size: 1.25rem;
+  color: white;
+  transition: letter-spacing 0.25s ease;
+}
+nav ul li a:hover, nav ul li.active a {
+  letter-spacing: 3px;
+}
+nav ul li.active a {
+  text-shadow: 1px 1px 5px white;
+}
+main {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+main .page {
+  position: relative;
+  min-height: 100vh;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  color: rgb(226, 226, 226);
+}
+footer a {
+  color: rgb(226, 226, 226);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.25s ease;
+}
+footer a:hover {
+  opacity: 0.7;
+}
+footer a i {
+  font-size: 2.5rem;
+  margin-right: 12px;
+}
+footer span.or {
+  cursor: default;
+  font-size: 2.25rem;
+}
+footer p {
+  cursor: default;
+  font-size: 1.25rem;
+}
+footer p em {
+  cursor: text;
 }
