@@ -41,6 +41,15 @@ nav img {
   width: 75%;
   transform: translateX(-50%);
 }
+nav div {
+  cursor: default;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  color: black;
+}
 nav ul li {
   text-align: center;
   margin: 25px 0;

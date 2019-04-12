@@ -27,10 +27,15 @@
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div>
+        Copyright &copy; <span id="copydate"></span> AMAN KUMAR
+    </div>
   </nav>
   <main>
     <div class="page">
-      <h1>Home</h1>
+      <div>
+        <h1>Home</h1>
+      </div>
       <footer>
         <a href="https://www.facebook.com/Grindfitnessin/" target="_blank"><i class="fab fa-facebook"></i> Let's Meet On Facebook</a>
         <span class="or">[OR]</span>
@@ -38,5 +43,9 @@
       </footer>
     </div>
   </main>
+  <script>
+    var copydate = document.querySelector('#copydate');
+    copydate.innerHTML = new Date().getFullYear();
+  </script>
 </body>
 </html>
