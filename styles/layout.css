@@ -1,0 +1,9 @@
+:root {
+  --theme-color-1: darkgray;
+  --theme-color-2: gray;
+  --theme-color-3: white;
+  --theme-color-4: black;
+}
+body {
+  background-color: var(--theme-color-1);
+}
