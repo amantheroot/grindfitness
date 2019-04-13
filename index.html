@@ -27,8 +27,11 @@
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div>
+    <div class="copyright">
         Copyright &copy; <span id="copydate"></span> AMAN KUMAR
+    </div>
+    <div class="nav__menutoggle" onclick="ontoggleClick();">
+        <div class="nav__menubar"></div>
     </div>
   </nav>
   <main>
@@ -43,9 +46,6 @@
       </footer>
     </div>
   </main>
-  <script>
-    var copydate = document.querySelector('#copydate');
-    copydate.innerHTML = new Date().getFullYear();
-  </script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
