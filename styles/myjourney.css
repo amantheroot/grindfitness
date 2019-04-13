@@ -1,0 +1,75 @@
+main .page {
+  background-image: url("../assets/images/e.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+main .page footer {
+  position: static;
+  background-color: rgba(0,0,0,0.75);
+}
+main .page section {
+  color: rgb(223, 223, 223);
+  background-color: rgba(0,0,0,0.5);
+  min-height: 100vh;
+}
+main .page section > div {
+  background-color: rgba(0,0,0,0.15);
+  color: rgb(223, 223, 223);
+}
+main .page section > div div {
+  padding: 30px;
+  padding-bottom: 0;
+  font-size: 1.25rem;
+}
+main .page section > div div ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+main .page section > div div ul li {
+  margin: 12px;
+}
+main .page section article {
+  width: 50%;
+  font-size: 1.25rem;
+  padding: 30px;
+  padding-top: 75px;
+}
+main .page section article h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+main .page section article hr {
+  height: 1px;
+  background-color: rgb(223, 223, 223);
+  border: none;
+}
+main .page section aside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .page section aside img {
+  width: 300px;
+  margin: 25px;
+}
+@media only screen and (max-width: 900px) {
+  main .page section article {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  main .page section article {
+    width: 65%;
+  }
+  main .page section aside {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 460px) {
+  main .page section article {
+    width: 100%;
+  }
+}
