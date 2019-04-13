@@ -1,5 +1,5 @@
 main .page {
-  background-image: url("../assets/images/c.jpg");
+  background-image: url("../assets/images/b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,11 +9,11 @@ main .page .overlay {
   width: 100%;
   background-color: rgba(0,0,0,0.75);
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 main .page .overlay h1 {
-  margin-top: -125px;
+  margin-top: -50px;
+  margin-left: 50px;
   color: rgb(223,223,223);
   font-size: 4vw;
 }
@@ -33,13 +33,16 @@ main .page .overlay h1 a:hover {
 }
 @media only screen and (max-width: 680px) {
   main .page .overlay h1 {
-    font-size: 5.5vw;
+    font-size: 5vw;
+  }
+  main .page .overlay h1 a {
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 460px) {
   main .page .overlay h1 {
-    font-size: 7vw;
+    font-size: 6.5vw;
     margin: 30px;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 }
