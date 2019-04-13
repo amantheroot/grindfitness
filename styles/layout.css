@@ -152,6 +152,7 @@ main .page {
 
 
 footer {
+  background-color: rgba(0,0,0,0.25);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -237,6 +238,21 @@ footer p em {
   nav ul li {
     margin: 12px 0;
   }
+  footer {
+    padding: 12px;
+  }
+  footer a {
+    font-size: 1rem;
+  }
+  footer a i {
+    font-size: 2rem;
+  }
+  footer span.or {
+    font-size: 1.75rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-height: 460px) {
   nav img {
@@ -247,5 +263,20 @@ footer p em {
   }
   nav ul li {
     margin: 6px 0;
+  }
+  footer {
+    padding: 6px;
+  }
+  footer a {
+    font-size: 0.75rem;
+  }
+  footer a i {
+    font-size: 1.5rem;
+  }
+  footer span.or {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 0.75rem;
   }
 }

@@ -1,0 +1,23 @@
+main .page {
+  background-image: url("../assets/images/d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* animation: backgroundanime 2s infinite; */
+}
+main .page h1 {
+  display: none;
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  bottom: 100px;
+  right: 30px;
+}
+@keyframes backgroundanime {
+  from {
+    background-image: url("../assets/images/d.jpg");
+  }
+  to {
+    background-image: url("../assets/images/f.jpg");
+  }
+}
