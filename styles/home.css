@@ -7,10 +7,11 @@ main .page h1 {
   z-index: 1;
   color: var(--primary-color);
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 3.25vw;
   position: fixed;
   top: 5%;
   left: 50%;
+  animation: shade infinite 15s;
 }
 .bg__crossfade {
   position: relative;
@@ -62,3 +63,28 @@ main .page h1 {
     color: var(--primary-color);
   }
 }
+@media only screen and (max-width: 900px) {
+  main .page h1 {
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 680px) {
+  main .page h1 {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 460px) {
+  main .page h1 {
+    font-size: 6.5vw;
+  }
+}
+/* @media only screen and (max-height: 630px) {
+  main .page h1 {
+    font-size: 6vw;
+  }
+}
+@media only screen and (max-height: 460px) {
+  main .page h1 {
+    font-size: 7.5vw;
+  }
+} */
