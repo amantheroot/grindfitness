@@ -9,9 +9,8 @@ main .page h1 {
   font-weight: bold;
   font-size: 2.5rem;
   position: fixed;
-  top: 10vh;
-  right: 23.5vw;
-  animation: shade infinite 15s;
+  top: 5%;
+  left: 50%;
 }
 .bg__crossfade {
   position: relative;
